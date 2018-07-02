@@ -1,0 +1,44 @@
+.dark {
+  .bg-light {
+    background-color: #343a40 !important;
+  }
+  .btn-light {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #e2e6ea;
+    &:hover {
+      color: #212529;
+      background-color: #e2e6ea;
+      border-color: #dae0e5;
+    }
+  }
+
+  #titleInput {
+    color: #e2e6ea;
+    &:focus {
+      border-color: #dae0e5!important;
+    }
+  }
+
+  .render-aera {
+    background-color: #303138;
+    color: #e2e6ea;
+  }
+
+  .editor-aera {
+    background-color: #303138;
+    color: #e2e6ea;
+
+    textarea {
+      background-color: #303138;
+      color: #cdd1d6;
+      border-color: black;
+      &:focus {
+        border-color: #cdd1d6;
+      }
+    }
+  }
+  .d-toggle-label {
+    color: #cdd1d6;
+  }
+}

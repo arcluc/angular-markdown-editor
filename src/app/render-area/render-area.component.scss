@@ -1,0 +1,30 @@
+.render-aera {
+  padding: 15px;
+  height: 100%;
+  overflow-y: auto;
+  word-wrap: break-word;
+}
+
+:host /deep/ blockquote {
+  color: rgba(0,0,0,.5);
+  padding-left: 1.5em;
+  border-left: 5px solid rgba(0,0,0,.075);
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+}
+
+:host /deep/ td, :host /deep/ th{
+  border-right: 1px solid #dcdcdc;
+  padding: 8px 12px;
+}
+
+:host /deep/ td {
+  border-top: 1px solid #dcdcdc;
+}
+
+:host /deep/ td:last-child, :host /deep/ th:last-child {
+  border-right: 0;
+}

@@ -1,0 +1,27 @@
+.editor-aera {
+  height: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  flex: 1;
+}
+
+textarea {
+  height: 99%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  resize: none;
+  flex: 1; 
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  &:focus {
+    border-color: #000000;
+  }
+}

@@ -1,0 +1,25 @@
+<div [ngClass]="{'container-fluid': true, 'dark': isDarkMode}">
+  <app-toolbar
+    (toggleSwitch)="toggleDarkMode()"
+  ></app-toolbar>
+  <div class="row main-area flex-nowrap no-gutters">
+    <div
+      class="col- left-area"
+      [style.width]="leftAreaWidth"  
+    >
+      <app-editor-area></app-editor-area>
+    </div>
+    <div
+      class="col- middle-separator"
+      [style.width.px]="separatorWidth"
+      (mousedown)='onSeparatorPress($event)'
+      
+    ></div>
+    <div
+      class="col- right-area"
+      [style.width]="rightAreaWidth"
+    >
+      <app-render-area></app-render-area>
+    </div>
+  </div>    
+</div>

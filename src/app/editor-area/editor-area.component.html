@@ -1,0 +1,19 @@
+<div class="editor-aera">
+  <app-editor-toolbar
+    [textArea]="textArea"
+    (transformToolReturned)="onTransformToolReturned($event)"
+  ></app-editor-toolbar>
+  <form>
+    <!-- <div class="form-group"> -->
+      <textarea
+        class="form-control"
+        id="editor"
+        [(ngModel)]="text"
+        (ngModelChange)="onTextAreaChange(text)"
+        name="rawText"
+        rows="30"
+        #editorTextArea
+      ></textarea>
+    <!-- </div> -->
+  </form>
+</div>
